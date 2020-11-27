@@ -1,0 +1,205 @@
+/*
+####################################
+#                                  #
+#   SKRYPT NAPISANY PRZEZ HANTER   #
+#                                  #
+####################################
+*/
+
+@font-face {
+  font-family: chess;
+  src: url('figury.ttf');
+}
+@font-face {
+  font-family: strzalka;
+    src:
+      url('strzalka.woff') format('woff'),
+      url('') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media all {
+  #Pole_sz {
+    height: 500px !important;
+    width: 670px !important;
+    position: relative !important;
+  }
+  #reset {
+    float: right;
+    height: 27px;
+    width: 52px;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    border: Solid black 2px;
+    border-radius: 16px;
+    background-color: #3b9fd6;
+    cursor: pointer;
+    padding-top: 3px;
+    padding-left: 10px;
+  }
+  #reset::selection {
+    background: none;
+  }
+  #poprzedni {
+    font-family: strzalka;
+    font-size: 28px;
+    float: right;
+    height: 30px;
+    width: 32px;
+    margin-top: 10px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: Solid black 2px;
+    border-radius: 16px;
+    background-color: #ff1c1c;
+    cursor: pointer;
+    padding-top: 0px;
+    padding-left: 5px;
+  }
+  #poprzedni::selection {
+    background: none;
+  }
+  #zmiana_p {
+    position: absolute;
+    left: 55px;
+    top: 53px;
+    visibility: hidden;
+    text-align: center;
+    padding: 150px 0;
+    display: block;
+    height: 90px;
+    width: 390px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    z-index: -5;
+  }
+  #zmiana_p a {
+    font-family: chess;
+    font-size: 48px;
+  }
+  #koniec {
+    position: absolute;
+    left: 55px;
+    top: 53px;
+    visibility: hidden;
+    text-align: center;
+    padding: 150px 0;
+    display: block;
+    height: 90px;
+    width: 390px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    z-index: -5;
+    font-size: 24px;
+  }
+  #koniec>i{
+    font-family: chess;
+    font-size: 48px;
+    font-style: normal;
+  }
+  #koniec>a{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+  }
+  #opis1 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+    padding: 5px 0;
+    height: 450px;
+    width: 50px;
+    float: left;
+  }
+  #opisA {
+    text-align: center;
+    font-size: 30px;
+    height: 50px;
+    width: 400px;
+  }
+  #opis1 div, #opisA div {
+    height: 50px;
+    width: 50px;
+  }
+  #lewy {
+    float: left;
+    height: 500px;
+    width: 400px;
+  }
+  #naglowek {
+    height: 32px;
+    width: 380px;
+    padding: 10px;
+    padding-bottom: 6px;
+  }
+  #kto {
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 16px;
+    display: block;
+    float: left;
+    border-color: black;
+    border: Solid 2px;
+  }
+  #prawy {
+    float: left;
+    padding-left: 10px;
+    height: 400px;
+    width: 210px;
+  }
+  #prawy div b{
+
+  }
+  #prawy>div>i{
+    font-family: chess;
+    font-size: 24px;
+    font-style: normal;
+  }
+  #prawy div u{
+    font-size: 24px;
+    margin-top: -5px;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 20px;
+    text-decoration: none;
+  }
+  #ruchy_w {
+    height: 400px;
+    width: 210px;
+    overflow-y: scroll;
+    border-style: inset;
+    border-width: 2px;
+    background-color: #EEEED2;
+    font-size: 21px;
+    font-family: Arial;
+  }
+  #Szachownica div, #opisA div {
+    float: left;
+  }
+  #Szachownica {
+    height: 400px;
+    width: 400px;
+    font-family: chess;
+    font-size: 46px;
+    text-align: center;
+    cursor: pointer;
+  }
+  #Szachownica>div::selection {
+    background: none;
+  }
+  #Szachownica div {
+    height: 50px;
+    width: 50px;
+  }
+  #opisA {
+    float: left;
+  }
+  .endl {
+    height: 0 !important;
+    clear: both;
+  }
+}
