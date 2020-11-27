@@ -22,15 +22,16 @@
 @media all {
   #Pole_sz {
     height: 500px !important;
-    width: 670px !important;
+    width: 675px !important;
     position: relative !important;
   }
-  #reset {
+  #Pole_sz>#prawy>#reset {
     float: right;
     height: 27px;
     width: 52px;
     margin-top: 10px;
     margin-bottom: 4px;
+    margin-right: 2px;
     border: Solid black 2px;
     border-radius: 16px;
     background-color: #3b9fd6;
@@ -38,10 +39,10 @@
     padding-top: 3px;
     padding-left: 10px;
   }
-  #reset::selection {
+  #Pole_sz>#prawy>#reset::selection {
     background: none;
   }
-  #poprzedni {
+  #Pole_sz>#prawy>#poprzedni {
     font-family: strzalka;
     font-size: 28px;
     float: right;
@@ -57,10 +58,10 @@
     padding-top: 0px;
     padding-left: 5px;
   }
-  #poprzedni::selection {
+  #Pole_sz>#prawy>#poprzedni::selection {
     background: none;
   }
-  #zmiana_p {
+  #Pole_sz>#zmiana_p {
     position: absolute;
     left: 55px;
     top: 53px;
@@ -74,11 +75,11 @@
     border-radius: 20px;
     z-index: -5;
   }
-  #zmiana_p a {
+  #Pole_sz>#zmiana_p>a {
     font-family: chess;
     font-size: 48px;
   }
-  #koniec {
+  #Pole_sz>#koniec {
     position: absolute;
     left: 55px;
     top: 53px;
@@ -93,18 +94,18 @@
     z-index: -5;
     font-size: 24px;
   }
-  #koniec>i{
+  #Pole_sz>#koniec>i{
     font-family: chess;
     font-size: 48px;
     font-style: normal;
   }
-  #koniec>a{
+  #Pole_sz>#koniec>a{
     position: absolute;
     right: 20px;
     top: 15px;
     cursor: pointer;
   }
-  #opis1 {
+  #Pole_sz>#opis1 {
     margin-top: 50px;
     text-align: center;
     font-size: 30px;
@@ -113,28 +114,28 @@
     width: 50px;
     float: left;
   }
-  #opisA {
+  #Pole_sz>#lewy>#opisA {
     text-align: center;
     font-size: 30px;
     height: 50px;
     width: 400px;
   }
-  #opis1 div, #opisA div {
+  #Pole_sz>#opis1>div, #Pole_sz>#lewy>#opisA>div {
     height: 50px;
     width: 50px;
   }
-  #lewy {
+  #Pole_sz>#lewy {
     float: left;
     height: 500px;
     width: 400px;
   }
-  #naglowek {
+  #Pole_sz>#lewy>#naglowek {
     height: 32px;
     width: 380px;
     padding: 10px;
     padding-bottom: 6px;
   }
-  #kto {
+  #Pole_sz>#lewy>#naglowek>#kto {
     height: 30px;
     width: 30px;
     background-color: white;
@@ -144,21 +145,21 @@
     border-color: black;
     border: Solid 2px;
   }
-  #prawy {
+  #Pole_sz>#prawy {
     float: left;
     padding-left: 10px;
     height: 400px;
-    width: 210px;
+    width: 215px;
   }
-  #prawy div b{
+  #Pole_sz>#prawy>div>b{
 
   }
-  #prawy>div>i{
+  #Pole_sz>#prawy>div>i{
     font-family: chess;
     font-size: 24px;
     font-style: normal;
   }
-  #prawy div u{
+  #Pole_sz>#prawy>div>u{
     font-size: 24px;
     margin-top: -5px;
     display: inline-block;
@@ -167,8 +168,8 @@
     height: 20px;
     text-decoration: none;
   }
-  #ruchy_w {
-    height: 400px;
+  #Pole_sz>#prawy>#ruchy_w {
+    height: 396px;
     width: 210px;
     overflow-y: scroll;
     border-style: inset;
@@ -177,10 +178,10 @@
     font-size: 21px;
     font-family: Arial;
   }
-  #Szachownica div, #opisA div {
+  #Pole_sz>#lewy>#Szachownica>div, #Pole_sz>#lewy>#opisA>div {
     float: left;
   }
-  #Szachownica {
+  #Pole_sz>#lewy>#Szachownica {
     height: 400px;
     width: 400px;
     font-family: chess;
@@ -188,17 +189,17 @@
     text-align: center;
     cursor: pointer;
   }
-  #Szachownica>div::selection {
+  #Pole_sz>#lewy>#Szachownica>div::selection {
     background: none;
   }
-  #Szachownica div {
+  #Pole_sz>#lewy>#Szachownica>div {
     height: 50px;
     width: 50px;
   }
-  #opisA {
+  #Pole_sz>#lewy>#opisA {
     float: left;
   }
-  .endl {
+  #Pole_sz .endl {
     height: 0 !important;
     clear: both;
   }
